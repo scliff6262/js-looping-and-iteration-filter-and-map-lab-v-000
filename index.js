@@ -4,7 +4,7 @@ function driversWithRevenueOver(objects, revenue){
 }
 
 function driverNamesWithRevenueOver(objects, revenue){
-  const driverObjects = objects.filter(function(object){return object.revenue > revenue})
+  let driverObjects = objects.filter(function(object){return object.revenue > revenue})
   return driverObjects.map(function(object){return object.name})
 }
 
