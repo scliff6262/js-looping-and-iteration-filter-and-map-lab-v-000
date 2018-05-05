@@ -13,5 +13,6 @@ function exactMatch(objects, keyValue){
 }
 
 function exactMatchToList(objects, keyValue){
-  return objects.filter(function(object){return object[Object.keys(keyValue)[0]] === keyValue[Object.keys(keyValue)[0]]})
+  let matchingObjs = objects.filter(function(object){return object[Object.keys(keyValue)[0]] === keyValue[Object.keys(keyValue)[0]]})
+
 }
