@@ -7,3 +7,7 @@ function driverNamesWithRevenueOver(objects, revenue){
   driverObjects = objects.filter(function(object){return object.revenue > revenue})
   return driverObjects.map(function(object){return object.name})
 }
+
+function exactMatch(objects, keyValue){
+  objects.filter(function(object){return Object.keys(keyValue)})
+}
